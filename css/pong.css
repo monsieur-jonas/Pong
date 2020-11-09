@@ -27,7 +27,7 @@ body{
 
 #balle{
     position: absolute;
-    /** centre la balledans l'ecran**/
+    /** centre la balle dans l'ecran**/
     top:50%; 
     left: 50%;
 
