@@ -1,46 +1,53 @@
-/* style page*/
 body{
-    display: flex;
+    /** Page style **/
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+    display: flex; 
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: black;
-    color: #fff;
-    font-family: monospace;
 }
-/* style terrain*/
+
 #terrain{
-    position: relative;
-    top: center ;
-    left: center;
-    border:1px solid rgb(0, 0, 0); 
-    border-top-color : #fff;
-    border-bottom-color : #fff;
-    width:800px;
-    height:400px;
+    /** Terrain Style **/
+    position : relative;
+    border: 1px solid #000;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    width : 800px;
+    height: 400px;
 }
-/* style balle*/
+
 #balle{
-    position: absolute;
+    /** Balle style **/
+    position : absolute;
     top: 50%;
-    left: 50%;
+    left:50%;
     width: 20px;
-    height: 20px;
-    background-color:white;
-    border-radius: 100%;
-}
-/*style raquettes */
-.raquette{
-    position: absolute;
-    top: calc( 50% - var(--hauteur)/2 );
-    width: 10px;
-    height: var(--hauteur);
+    height:20px;
     background-color: white;
-    --hauteur: 25%;
+    border-radius:100%;
 }
-/* 2eme raquettes */
-#raquette2{
-    right : 0;
+
+#raquetteG{
+    /** Raquette gauche style **/
+    position : absolute;
+    top:10%;
+    left : 10%;
+    width : 10px;
+    height : 100px;
+    background-color : white;
+}
+
+#raquetteD{
+    /** Raquette droite style **/
+    position : absolute;
+    top:80%;
+    left : 90%;
+    width : 10px;
+    height : 100px;
+    background-color : white;
 }
