@@ -31,23 +31,20 @@ body{
     background-color: white;
     border-radius:100%;
 }
-
-#raquetteG{
-    /** Raquette gauche style **/
+.raquette{
     position : absolute;
     top:10%;
-    left : 10%;
     width : 10px;
     height : 100px;
     background-color : white;
+    border-radius: 5px;
+}
+#raquetteG{
+    /** Raquette gauche style **/
+    left : 10%;
 }
 
 #raquetteD{
     /** Raquette droite style **/
-    position : absolute;
-    top:80%;
-    left : 90%;
-    width : 10px;
-    height : 100px;
-    background-color : white;
+    right : 10%;
 }
