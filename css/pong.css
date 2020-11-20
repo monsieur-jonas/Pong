@@ -3,7 +3,7 @@ body{
     background-color: #000;
     color: #fff;
     font-family: monospace;
-    display: flex; 
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;

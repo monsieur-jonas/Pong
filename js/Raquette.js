@@ -1,30 +1,60 @@
 class Raquette{
-    constructor($html) {
 
-    }
-}
-class RaquetteG{
     constructor($html){
         this.$html=$html;
-        this.haut=parseInt($("#raquetteG").css("top"));
-        this.hauteur=parseInt($("#raquetteG").css("height"));
-        this.bas=this.haut+this.hauteur
-        this.vitesse=0.5;
-    }
-    majHTML(){
-        this.$html.css("top",raquetteG.haut);
+        this.haut = parseInt($html.css("top"));
+        this.gauche = parseInt($html.css("left"));
+        this.largeur = $html.width();
+        this.hauteur = $html.height();
+        this.vitesse=1.5;
+        this.direction=0;
     }
 
-}
+    // Créations de classes et variables
+    get bas(){
+        return this.haut+this.hauteur;
+    }
 
-class RaquetteD{
-    constructor($html){
-        this.$html=$html;
-        this.hauteur=parseInt($("#raquetteD").css("height"));
-        this.haut=parseInt($("#raquetteD").css("top"));
-        this.vitesse=0.5;
+    set bas(value) {
+        this.haut = value - this.hauteur;
     }
+
+    get droite() {
+        return this.gauche+this.largeur;
+    }
+
+    set droite(value) {
+        this.largeur = value - this.largeur;
+    }
+
+    monte(){
+        this.direction=-1;
+    }
+
+    descend(){
+        this.direction=1;
+    }
+
+    stop(){
+        this.direction=0;
+    }
+
     majHTML(){
-        this.$html.css("top",raquetteD.haut);
+        this.$html.css("top",this.haut);
     }
+
+    bouge(){
+        this.haut=this.haut+this.vitesse*this.direction;
+        this.majHTML();
+        if (this.haut<0){
+            this.haut=0;
+            this.stop();
+        }
+        if (this.bas>terrain.hauteur){
+            this.bas=terrain.hauteur;
+            this.stop();
+        }
+    }
+
+
 }
