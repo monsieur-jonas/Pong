@@ -6,7 +6,7 @@ class Raquette{
         this.gauche = parseInt($html.css("left"));
         this.largeur = $html.width();
         this.hauteur = $html.height();
-        this.vitesse=2;
+        this.vitesse=4;
         this.direction=0;
     }
 
