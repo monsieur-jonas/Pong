@@ -11,8 +11,8 @@ class Balle{
         this.hauteur=$("#balle").height();
 
         //variable d'aléatoire de la vitesse et de la direction de la balle
-        this.vitesseX=Math.random()*5-1;
-        this.vitesseY=Math.random()*5-1;
+        this.vitesseX=Math.random()*4-1;
+        this.vitesseY=Math.random()*4-1;
     }
 
     //get = obtenir et set = definir
