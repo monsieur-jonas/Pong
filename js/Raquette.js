@@ -56,5 +56,7 @@ class Raquette{
         }
     }
 
-
 }
+
+let raquetteG = new Raquette($("#raquetteG"));
+let raquetteD = new Raquette($("#raquetteD"));

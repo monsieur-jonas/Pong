@@ -7,3 +7,6 @@ class Terrain{
         this.hauteur=$("#terrain").height();
     }
 }
+
+let terrain=new Terrain($("#terrain"));
+console.log(terrain);

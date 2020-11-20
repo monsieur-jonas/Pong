@@ -90,3 +90,5 @@ class Balle{
         this.majHTML();
     }
 }
+
+let balle = new Balle($("#balle"));
