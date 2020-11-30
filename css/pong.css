@@ -41,10 +41,10 @@ body{
 }
 #raquetteG{
     /** Raquette gauche style **/
-    left : 10%;
+    left : 2%;
 }
 
 #raquetteD{
     /** Raquette droite style **/
-    right : 10%;
+    right : 2%;
 }
